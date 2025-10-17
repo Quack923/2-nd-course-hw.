@@ -98,6 +98,7 @@ background-color: white;
     align-items: center;
     gap: 51px;
     padding-left: 49px;
+        margin-top: 161px;
   }
 
   .header-floor__atb-text{
@@ -190,7 +191,7 @@ height: 473px;
 height: 512px;
 }
 
-.game__type2{ margin-bottom: 32px;}
+
 .game__type-big{
   height: 551px;
 }
@@ -220,7 +221,8 @@ background-repeat: no-repeat;
 
 .game__type4:hover{  transform: scale(1.1);}
 
-
+.game__type5{    margin-top: 32px;
+}
 .game__type5:hover{  transform: scale(1.1);}
 
 
@@ -234,10 +236,11 @@ height: 36px;
 border-radius: 52.58px;
 background: rgba(247, 247, 247, 1);
 margin-left: 32px;
-
-
-
 }
+.game__type-img{ border-radius: 30px;}
+
+
+
 
 .game-number{ 
   color: black;
