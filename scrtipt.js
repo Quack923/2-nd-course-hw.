@@ -12,25 +12,26 @@ alert(autor);
 
 let n1 = 10;
 let n2 = 2;
-alert (sum = n1+n2);
-alert (difference = n1-n2);
-alert(product=n1*n2);
-alert(quotient=n1/n2);
+ let result1 = alert ( n1+n2);
+ let result2 = alert ( n1-n2);
+ let result3 = alert(n1*n2);
+ let result4 = alert(n1/n2);
 
 let result = 2 ** 5;
 alert(result);
 
 let aa = 9;
 let b = 2;
-alert(quotient=aa/b);
+let remainder = (alert(aa%b));
+
 
 let num = 1;
 num += 5;
-num-= 3;
-num*= 7;
-num/= 3;
-num+= 1;
-num-= 1;
+num -= 3;
+num *= 7;
+num /= 3;
+num += 1;
+num -= 1;
 alert(num);
 
 let age = prompt("Сколько вам лет?");
@@ -40,7 +41,7 @@ alert(age);
 
 const user = {
    name: 'Vanya',
-   age: '23',
+   age: 23,
    isAdmin:'false',
 }
 
