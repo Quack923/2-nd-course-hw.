@@ -12,17 +12,24 @@ alert(autor);
 
 let n1 = 10;
 let n2 = 2;
- let result1 = alert ( n1+n2);
- let result2 = alert ( n1-n2);
- let result3 = alert(n1*n2);
- let result4 = alert(n1/n2);
+ let result1 = ( n1+n2);
+ alert(result1);
+ let result2 = ( n1-n2);
+ alert(result2);
+ let result3 = (n1*n2);
+ alert(result3);
+ let result4 = (n1/n2);
+ alert(result4);
+
+ 
 
 let result = 2 ** 5;
 alert(result);
 
 let aa = 9;
 let b = 2;
-let remainder = (alert(aa%b));
+let remainder = (aa%b);
+alert(remainder);
 
 
 let num = 1;
@@ -42,9 +49,10 @@ alert(age);
 const user = {
    name: 'Vanya',
    age: 23,
-   isAdmin:'false',
+   isAdmin:false,
 }
 
 
 const userName = prompt("Как вас зоувт?");
 alert(`Привет, ${userName}!`);
+
