@@ -1,7 +1,7 @@
 let password = (12345);
 let UserPassword = (prompt ('Введите пароль:'));
 
-if (UserPassword===password){alert("Пароль введен верно");}
+if (UserPassword==password){alert("Пароль введен верно");}
     
  else {alert("Пароль введен неверно");}
     
@@ -24,12 +24,10 @@ if (d>100||e>100) {console.log("Верно");
 
 let a = '2';
 let b = '3';
-Number(a);
-Number(b);
-alert(a+b);
+ alert(Number(a) + Number(b));
 
 
-let day = prompt("Введите номер или название месяца и узнайте какой это сезон");
+let month = prompt("Введите номер или название месяца и узнайте какой это сезон");
 
 switch (month) {
    case 'январь'||'первый':
