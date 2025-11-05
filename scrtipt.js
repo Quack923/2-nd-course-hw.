@@ -1,73 +1,64 @@
-let password = (12345);
-let UserPassword = (prompt ('Введите пароль:'));
+let i = 0;
+while (i < 2) {
+  alert("Привет");
+  i++;}
 
-if (UserPassword==password){alert("Пароль введен верно");}
-    
- else {alert("Пароль введен неверно");}
-    
-let c =(7);
-if (c>0&&c<10) { console.log("Верно");
-    
-} else {console.log("Неверно");
-    
+
+  let n1 = 1;
+  while (n1 < 5) {alert(n1);
+  n1++;}
+
+
+    let n2 = 7;
+  while (n2 <= 22) {alert(n2);
+  n2++;}
+
+
+  const worker1 = {
+   name: 'Kolya',
+   salary: 200
+  }
+
+  const worker2 = {
+   name: 'Vasya',
+   salary: 300
+  }
+
+  const worker3 = {
+   name: 'Petya',
+   salary: 400
+  }
+
+  for (const key in worker1) {
+     alert(`${key}: ${worker1[key]}`);
 }
 
-
-let d =(70);
-let e = (120);
-
-if (d>100||e>100) {console.log("Верно");
-    
-} else {console.log("Неверно");
-    
+for (const key in worker2) {
+     alert(`${key}: ${worker2[key]}`);
 }
 
-let a = '2';
-let b = '3';
- alert(Number(a) + Number(b));
-
-
-let month = prompt("Введите номер или название месяца и узнайте какой это сезон");
-
-switch (month) {
-   case 'январь'||'первый':
-      console.log('Зима');
-      break;
-   case 'февраль'||'Второй':
-      console.log('Зима');
-      break;
-   case 'март'||'Третий':
-      console.log('Весна');
-      break;
-   case 'апрель'||'Четвертый':
-      console.log('Весна');
-      break;
-   case 'май'||'Пятый':
-      console.log('Весна');
-      break;
-   case 'июнь'||'Шестой':
-      console.log('Лето');
-      break;
-   case 'июль'||'Седьмой':
-      console.log('Лето');
-      break;
-   case 'август'||'Восьмой':
-      console.log('Лето');
-      break;
-   case 'сентябрь'||'Девятый':
-      console.log('Осень');
-      break;
-   case 'октябрь'||'Десятый':
-      console.log('Осень');
-      break;
-   case 'ноябрь'||'Одинадцатый':
-      console.log('Осень');
-      break;
-   case 'декабрь'||'Двенадцатый':
-      console.log('Зима');
-      break;
+for (const key in worker3) {
+     alert(`${key}: ${worker3[key]}`);
+}
    
-   default:
-      console.log('ввели что-то не то');
-      break;
+
+let n = 1000;
+let atb = 0;
+while (n >= 50) {
+  n = n / 2;
+  atb++;
 }
+ 
+alert("число делений: " + atb);
+alert(n)
+
+
+let m = 3;
+
+for(m <=31; m+=7; ){
+alert(`Сегодня пятница. Необходимо подготовить отчет.`);
+
+    }    
+
+
+
