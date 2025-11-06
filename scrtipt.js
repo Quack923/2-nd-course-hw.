@@ -5,7 +5,7 @@ while (i < 2) {
 
 
   let n1 = 1;
-  while (n1 < 5) {alert(n1);
+  while (n1 <= 5) {alert(n1);
   n1++;}
 
 
@@ -14,30 +14,30 @@ while (i < 2) {
   n2++;}
 
 
-  const worker1 = {
+  let worker1 = {
    name: 'Kolya',
    salary: 200
   }
 
-  const worker2 = {
+  let worker2 = {
    name: 'Vasya',
    salary: 300
   }
 
-  const worker3 = {
+  let worker3 = {
    name: 'Petya',
    salary: 400
   }
 
-  for (const key in worker1) {
+  for (let key in worker1) {
      alert(`${key}: ${worker1[key]}`);
 }
 
-for (const key in worker2) {
+for (let key in worker2) {
      alert(`${key}: ${worker2[key]}`);
 }
 
-for (const key in worker3) {
+for (let key in worker3) {
      alert(`${key}: ${worker3[key]}`);
 }
    
@@ -53,12 +53,16 @@ alert("число делений: " + atb);
 alert(n)
 
 
-let m = 3;
+let F = 5; 
 
-for(m <=31; m+=7; ){
-alert(`Сегодня пятница. Необходимо подготовить отчет.`);
+  for (let i = F; i <= 31; i += 7) {
+
+     {
+
+       alert (`Сегодня пятница. Необходимо подготовить отчет.`);
 
     }    
 
+}
 
 

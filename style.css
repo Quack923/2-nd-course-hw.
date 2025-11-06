@@ -136,7 +136,7 @@ body {
 }
 
 .game__head-star {
-  width: 584.72px;
+  width: 612px;
   height: 584.72px;
   background-image: url(img-hw/Star\ 1.svg);
   background-repeat: no-repeat;
@@ -663,18 +663,21 @@ body {
     font-size: 20px;
   }
   .game-name {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 0px;
+  }
+  .content {
+    height: 2300px;
   }
   .content-head {
     padding-left: 30px;
   }
   .content__game {
-    height: 350px;
+    height: 300px;
     width: 600px;
   }
   .content__game2 {
-    height: 350px;
+    height: 300px;
     width: 600px;
   }
   .content__game-img2 {
@@ -689,12 +692,23 @@ body {
   }
   .content__game-atb {
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
   }
   .content__game-name {
     font-size: 30px;
   }
   .content__game-description {
-    font-size: 20px;
+    font-size: 18px;
+    padding-left: 45px;
+  }
+  .content__game-btn {
+    height: 50px;
+    margin-top: 0px;
   }
 }
 @media (min-width: 700px) and (max-width: 834px) {
@@ -737,6 +751,7 @@ body {
   }
   .game-name {
     font-size: 20px;
+    padding-left: 30px;
   }
   .content {
     height: 4400px;
@@ -751,6 +766,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0px;
+    padding-bottom: 20px;
   }
   .content__game {
     width: 500px;
@@ -766,16 +782,22 @@ body {
   }
   .content__game-img {
     width: 500px;
+    height: 370px;
+    padding-bottom: 37px;
     padding-left: 0px;
   }
   .content__game-img2 {
     width: 500px;
-    height: 383px;
+    height: 370px;
     padding-left: 0px;
-    padding-bottom: 37px;
+    padding-bottom: 30px;
   }
   .content__game-name {
     font-size: 30px;
     font-weight: 700;
+    text-align: center;
+  }
+  .content__game-description {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
