@@ -14,33 +14,19 @@ while (i < 2) {
   n2++;}
 
 
-  let worker1 = {
-   name: 'Kolya',
-   salary: 200
-  }
 
-  let worker2 = {
-   name: 'Vasya',
-   salary: 300
-  }
-
-  let worker3 = {
-   name: 'Petya',
-   salary: 400
-  }
-
-  for (let key in worker1) {
-     alert(`${key}: ${worker1[key]}`);
-}
-
-for (let key in worker2) {
-     alert(`${key}: ${worker2[key]}`);
-}
-
-for (let key in worker3) {
-     alert(`${key}: ${worker3[key]}`);
-}
    
+
+let worker = {
+   "Коля": "200",
+   "Вася": "300",
+   "Петя": "400"
+
+}
+
+for (let key in worker) {
+     alert(`${key}- зарплата ${worker[key]} долларов.`);
+}
 
 let n = 1000;
 let atb = 0;
