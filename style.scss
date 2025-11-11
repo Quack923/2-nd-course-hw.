@@ -366,6 +366,8 @@ font-weight: 400;
 }
 
 .content__game-btn{
+  box-sizing: border-box;
+  border: 1px solid rgba(32, 32, 39, 1);
 border-radius: 60px;
 background: rgba(32, 32, 39, 1);
 width: 247px;
@@ -374,6 +376,7 @@ margin-top: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 
 .content__game-function{
@@ -384,7 +387,8 @@ margin-top: 12px;
 
 .content__game-btn:hover{transition: 1s;
 color: black;
-background-color: white;}
+background-color: white;
+}
 .content__game-function:hover{color: black;}
 
 .content__game-img{

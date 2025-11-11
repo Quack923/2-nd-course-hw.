@@ -1,54 +1,104 @@
-let i = 0;
-while (i < 2) {
-  alert("Привет");
-  i++;}
+function Game1() {
+
+   let ansver = Math.floor(Math.random() * 100) + 1;
 
 
-  let n1 = 1;
-  while (n1 <= 5) {alert(n1);
-  n1++;}
 
 
-    let n2 = 7;
-  while (n2 <= 22) {alert(n2);
-  n2++;}
+while (true) {
+   let userAnsver = prompt("Введите любое число от 0 до 100!");
+   userAnsver= Number(userAnsver);
+   if (ansver === userAnsver) {alert("Поздравляем, ты большой молодец,это правильный ответ!!!" );
+      break;
+   } else if(ansver > userAnsver) { alert("Не угадал, твое число чуть-чуть меньше загаданого!");
+      
+   }
+   else  {alert("Не угадал, твое число чуть-чуть больше загаданого!");}
 
-
+   }
 
    
-
-let worker = {
-   "Коля": "200",
-   "Вася": "300",
-   "Петя": "400"
-
 }
 
-for (let key in worker) {
-     alert(`${key}- зарплата ${worker[key]} долларов.`);
-}
-
-let n = 1000;
-let atb = 0;
-while (n >= 50) {
-  n = n / 2;
-  atb++;
-}
- 
-alert("число делений: " + atb);
-alert(n)
-
-
-let F = 5; 
-
-  for (let i = F; i <= 31; i += 7) {
-
-     {
-
-       alert (`Сегодня пятница. Необходимо подготовить отчет.`);
-
-    }    
-
+function smallNumber(a, b) {
+	if (a > b) {
+		return a;
+} else  {
+	return b;} 
+	
 }
 
 
+function evenNumber() {
+   let  n = prompt("Введите любое число");
+
+if (n % 2 == 0) { alert("Ваше число четное")
+
+   
+} else { alert("Ваше число нечетное")
+   
+}
+   
+}
+
+
+function square(x) {
+  const square = x * x;
+  console.log(square);
+}
+
+function retSquare(x) {
+  return x * x;
+}
+
+
+
+
+
+function ageControl() {
+
+   let userAge = prompt("Введите ваш возраст");
+
+   if (userAge < 0) {alert("Вы ввели что-то не то");
+      
+   } else if (userAge > 0 ) {alert("Привет, друг!");
+      
+      
+   } else {alert("Добро пожаловать!")}
+   
+}
+
+
+
+function nanNumber(n1, n2) {
+
+   if (isNaN(n1) || isNaN(n2)) {
+    return 'Одно или оба значения не являются числом';
+  }
+  else (n1*n2)
+   
+  console.log(nanNumber(3, 5));
+}
+
+
+
+const circle1 = {
+    radius: l,
+    getArea() {
+        return s = π * (l ** 2);
+    },
+    getPerimeter() {
+        return C = 2 * π * l;
+    }
+}
+
+
+const circle2 = {
+    radius: 5,
+    getArea() {
+        return s = π * (5 ** 2);
+    },
+    getPerimeter() {
+        return C = 2 * π * 5;
+    }
+}
