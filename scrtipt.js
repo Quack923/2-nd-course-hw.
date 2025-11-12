@@ -21,7 +21,7 @@ while (true) {
 }
 
 function smallNumber(a, b) {
-	if (a > b) {
+	if (a < b) {
 		return a;
 } else  {
 	return b;} 
@@ -32,10 +32,12 @@ function smallNumber(a, b) {
 function evenNumber() {
    let  n = prompt("Введите любое число");
 
-if (n % 2 == 0) { alert("Ваше число четное")
+   n = Number(n);
+
+if (n % 2 == 0) { return 'Ваше число четное';
 
    
-} else { alert("Ваше число нечетное")
+} else { return 'Ваше число нечетное';
    
 }
    
@@ -59,6 +61,8 @@ function ageControl() {
 
    let userAge = prompt("Введите ваш возраст");
 
+   userAge = Number(userAge);
+
    if (userAge < 0) {alert("Вы ввели что-то не то");
       
    } else if (userAge > 0 ) {alert("Привет, друг!");
@@ -75,17 +79,31 @@ function nanNumber(n1, n2) {
    if (isNaN(n1) || isNaN(n2)) {
     return 'Одно или оба значения не являются числом';
   }
-  else (n1*n2)
+  else {
+    return n1 * n2;
+  }
    
-  console.log(nanNumber(3, 5));
 }
 
+
+
+function numberOrnot (){
+
+   let userNumber = prompt('Ввведите значение');
+      let num3 = (userNumber*userNumber*userNumber);
+   if (isNaN(userNumber)) {
+      return 'Переданный параметр не является числом';
+   } else { return  `n в кубе равняется ${num3}`;
+      
+   }
+
+}
 
 
 const circle1 = {
     radius: l,
     getArea() {
-        return s = π * (l ** 2);
+        return Mаth.PI * (this.radius ** 2);
     },
     getPerimeter() {
         return C = 2 * π * l;
@@ -96,7 +114,7 @@ const circle1 = {
 const circle2 = {
     radius: 5,
     getArea() {
-        return s = π * (5 ** 2);
+        return Mаth.PI * (this.radius ** 2);
     },
     getPerimeter() {
         return C = 2 * π * 5;
