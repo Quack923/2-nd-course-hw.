@@ -29,8 +29,7 @@ function smallNumber(a, b) {
 }
 
 
-function evenNumber() {
-   let  n = prompt("Введите любое число");
+function evenNumber(n) {
 
    n = Number(n);
 
@@ -65,7 +64,7 @@ function ageControl() {
 
    if (userAge < 0) {alert("Вы ввели что-то не то");
       
-   } else if (userAge > 0 ) {alert("Привет, друг!");
+   } else if ( 12 > userAge > 0 ) {alert("Привет, друг!");
       
       
    } else {alert("Добро пожаловать!")}
@@ -99,22 +98,20 @@ function numberOrnot (){
 
 }
 
-
+let radius1 = 5;
 const circle1 = {
-    radius: l,
     getArea() {
-        return Mаth.PI * (this.radius ** 2);
+        return Math.PI * (radius1 ** 2);
     },
     getPerimeter() {
         return C = 2 * π * l;
     }
 }
 
-
+let radius2 = 5;
 const circle2 = {
-    radius: 5,
     getArea() {
-        return Mаth.PI * (this.radius ** 2);
+        return Math.PI * (radius2 ** 2);
     },
     getPerimeter() {
         return C = 2 * π * 5;
