@@ -21,47 +21,40 @@ while (true) {
 }
 function Game2(){
 
-const actions = ['+', '-', '*', '/'];
+const num1 = Math.floor(Math.random() * 10) + 1; 
+const num2 = Math.floor(Math.random() * 10) + 1;
+  const operators = ['+', '-', '*', '/'];
+  const operator = operators[Math.floor(Math.random() * operators.length)];
+ let userAnsver;
+  let result;
 
-let num1 =  Math.floor(Math.random()*10)+1;
-let num2 =  Math.floor(Math.random()*10)+1;
-
-
-switch (actions) {
-   case '+' :
-      userAnsver = prompt(`сложите ${num1} и ${num2}`);
+switch (operator) {
+    case '+':
+      userAnsver = `${num1} + ${num2}`;
       result = num1 + num2;
-
       break;
-
-     case '-':
-         userAnsver = prompt(`Вычтите ${num1} из ${num2}`);
-         result = num1 - num2;
-
+    case '-':
+      userAnsver = `${num1} - ${num2}`;
+      result = num1 - num2;
       break;
-
-   case '*':
-        userAnsver = prompt(`Умножьте ${num1} на ${num2}`);
+    case '*':
+      userAnsver = `${num1} * ${num2}`;
       result = num1 * num2;
-
-   break;
-
-   case '/':
-      userAnsver = prompt(`Разделите ${num1} на ${num2}(В случае получения длинной дроби укажите до 2 чисел после запятой)`);
-      result = num1 / num2;
-      result = result.toFixed(2)
       break;
-}
-userAnsver = Number(userAnsver);
+    case '/':
+   
+      userAnsver = `${num1} / ${num2}`;
+      result = num1 / num2;
+      break;
+  }
 
-if (userAnsver === result)
-    {alert('Вы большой молодец это правильный ответ');
-   
-} else { 
-   alert(`Ой, кажется вы где-то ошиблись, правильный ответ ${result}`);
-   
-}
-}
+ const userNum = prompt(`Решите: ${userAnsver}`);
+
+ if (userAnswer === result) {
+    alert("Верно!");
+  } else {
+    alert(`Неправильно. Правильный ответ: ${result}`);
+  }}
 
 
 const arr =[1, 5, 4, 10, 0, 3]
@@ -192,12 +185,19 @@ for( let i = 0; i < ms14.length; i++){
 console.log(ms142);
 
 
+
+
 function average(){
 return Math.floor(Math.random()*10);
 }
+
 const ms15 = [];
-for (let i = 0; i < 6; i++){
-   ms14.push(random());
+for (let i = 0; i < 3; i++){
+   ms15.push(average());
 }
 
 console.log(ms15.reduce((a,b)=> a + b / ms15.length));
+
+
+
+
