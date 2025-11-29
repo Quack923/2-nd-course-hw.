@@ -26,6 +26,7 @@ const num2 = Math.floor(Math.random() * 10) + 1;
   const operators = ['+', '-', '*', '/'];
   const operator = operators[Math.floor(Math.random() * operators.length)];
  let userAnsver;
+ userAnsver = Number(userAnsver);
   let result;
 
 switch (operator) {
@@ -49,8 +50,8 @@ switch (operator) {
   }
 
  const userNum = prompt(`Решите: ${userAnsver}`);
-
- if (userAnswer === result) {
+ const quest = parseFloat(userNum);
+ if (quest == result) {
     alert("Верно!");
   } else {
     alert(`Неправильно. Правильный ответ: ${result}`);
@@ -192,7 +193,7 @@ return Math.floor(Math.random()*10);
 }
 
 const ms15 = [];
-for (let i = 0; i < 3; i++){
+for (let i = 1; i < 6; i++){
    ms15.push(average());
 }
 
