@@ -189,16 +189,15 @@ console.log(ms142);
 
 
 function average(){
-return Math.floor(Math.random()*10);
+return Math.floor(Math.random()*10) +1;
 }
 
 const ms15 = [];
-for (let i = 1; i < 6; i++){
+for (let i = 0; i < 6; i++){
    ms15.push(average());
 }
 
-console.log(ms15.reduce((a,b)=> a + b / ms15.length));
-
+console.log(ms15.reduce((a,b)=> a + b) / ms15.length);
 
 
 
