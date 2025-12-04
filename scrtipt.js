@@ -57,147 +57,133 @@ switch (operator) {
     alert(`Неправильно. Правильный ответ: ${result}`);
   }}
 
+function Game3(){
+  let splitWord = String((prompt("Пожалуйста,введите ваш текст")).split);
+  let reverseWord = splitWord.reverse();
+  let joinWord = reverseWord.join("");
+  return joinWord;
+}
 
-const arr =[1, 5, 4, 10, 0, 3]
-for (let i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
-  if (arr[i] === 10) {
-    break;
-  }
+function Game5() {
+    
+    const quiz = [
+        {
+            question: "Какой цвет небо?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2 
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+
+    let num = 0; 
+
+
+    for (let i = 0; i < quiz.length; i++) {
+       
+        let quizQuest = Number(prompt(`Выбери правильный ответ? \n${quiz[i].question} \n${quiz[i].options.join('\n')}`));
+        
+        
+        if (quizQuest === quiz[i].correctAnswer) {
+            num++; 
+            alert("вы ответили верно");
+        } else {
+            alert("не верно");
+        }
+    }
+
+
+    alert(`Вы ответили на ${num} вопросов`);
 }
 
 
-  const arr2 =[1, 5, 4, 10, 0, 3] 
-for (let i = 0; i < arr2.length; i++) {
-   if (arr2[i] === 4) {
-      console.log(i);
-      break;
-   }
-}
-
-const arr3 = [1, 3, 5, 10, 20]
-console.log(arr3.join(' '));
 
 
-
-
-const massive1 = [];
-for (let b = 0; b < 3; b++){
-   const massive2 = [];
-   for (let b = 0; b < 3; b++){
-      massive2.push(1);
-   }
-   massive1.push(massive2);
-   }
-console.log(massive1);
-
-
-
-const mas1 = [1, 1, 1];
-mas1.push(2, 2, 2);
-
-console.log(mas1);
-
-const mas2 = [9, 8, 7, 'a', 6, 5];
-
-mas2.sort(Number);
-const filMas = mas2.filter(item => !isNaN(item));
-
-
-console.log(filMas);
-
-
-const questMas = [9, 8, 7, 6, 5];
-let ansverNum = prompt('Попробуйте угаадть есть ли ваше число в массиве');
-if (questMas.includes(ansverNum)) { alert('Поздравляем, вы угадали');
-   
-} else { alert('К сожалению, вы не угадали');
-   
-}
-
-
-let str = 'abcdef';
-str = str.split('');
-str.reverse();
-str = str.join('');
+let str ='js';
+str = str.toUpperCase();
 console.log(str);
 
 
-
-
-const ms9 = [[1, 2, 3],[4, 5, 6]];
-const ms91 = [];
-for ( let i = 0; i < ms9.length; i++) {
-   ms91.push(...ms9[i]);
-}
-console.log(ms91);
-
-
-const mas10 = [1,3,5,7,9];
-
-for ( let i = 0; i < mas10.length; i++){
-   if(mas10[i+1]){
-console.log(mas10[i]+mas10[i+1]);}
-}
-
-
-
-function double(mas) {
-   return mas.map(item => item ** 2);
+function filter (arr, str) {
+   const lowerStr = str.toLowerCase();
+   return arr.filter(item => item.toLowerCase().startsWith(lowerStr));
 
 }
 
-console.log(double([2,5,4]));
+console.log(filter(['Молокозавод', 'Молочка','МИЛк'], 'Молоко'));
 
 
 
-function run (mas){
-   return mas.map(item => item.length);
-
-}
-
-console.log(run(['length'])); 
+let num3 =  32.58884;
+ console.log(Math.floor(num3));
+ console.log(Math.ceil(num3));
+ console.log(Math.round(num3));
 
 
-function minus (ms13) {
-   return ms13.filter(item => item < 0);
 
-}
-
-console.log(minus([1,4,5,6,7]));
+ 
+ console.log(Math.min(52, 53, 49, 77, 21, 32));
+ console.log(Math.max(52, 53, 49, 77, 21, 32));
 
 
-function random(){
-return Math.floor(Math.random()*10);
-}
 
-const ms14 = [];
-for (let i = 0; i < 10; i++){
-   ms14.push(random());
-}
-const ms142 = [];
-for( let i = 0; i < ms14.length; i++){
-   if(ms14[i] % 2 === 0) {
-      ms142.push(ms14[i]);
+ let num5 = Math.random() * 10;
+console.log(Math.floor(num5));
 
+
+
+function randomNumFucn (num6){
+   const arr = [];
+   for(let i = 0; i < num6; i++){
+       arr.push(Math.floor(Math.random()*num6));
    }
+return arr;
 }
 
-console.log(ms142);
+console.log(randomNumFucn(10));
 
 
-
-
-function average(){
-return Math.floor(Math.random()*10) +1;
+function doubleRandom(num7,num72){
+   return Math.floor(Math.random() * (num72 - num7 + 1)) + num7;
 }
 
-const ms15 = [];
-for (let i = 0; i < 6; i++){
-   ms15.push(average());
+console.log(doubleRandom(12,25));
+
+
+
+let currentDate = new Date();
+console.log(currentDate);  
+
+
+currentDate.setDate(currentDate.getDate() + 73);
+console.log(currentDate);
+
+
+
+function formDate(date) {
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь",
+      "Октябрь", "Ноябрь", "Декабрь"];
+const year = date.getFullYear();
+const day = date.getDate();
+const month = date.getMonth();
+const dayOfWeek = days[date.getDay()];
+const hours = date.getHours();
+const minutes = date.getMinutes();
+const seconds = date.getSeconds();
+  
+   return `
+    Дата: ${day} ${months[month]} ${year} - это ${dayOfWeek}.
+    Время: ${hours}:${minutes}:${seconds};
+  `; 
 }
 
-console.log(ms15.reduce((a,b)=> a + b) / ms15.length);
-
-
-
+ console.log(formDate(new Date()));
