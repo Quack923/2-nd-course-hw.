@@ -48,6 +48,7 @@ body {
 .header-text {
   font-size: 64px;
   font-weight: 700;
+  color: rgb(32, 32, 39);
 }
 
 .header-little {
@@ -55,11 +56,12 @@ body {
   font-weight: 400;
   padding-top: 24px;
   padding-bottom: 48px;
+  color: rgb(32, 32, 39);
 }
 
 .header-btn {
   width: 247px;
-  background-color: black;
+  background-color: rgb(32, 32, 39);
   height: 66px;
   color: white;
   box-sizing: border-box;
@@ -132,7 +134,6 @@ body {
   padding-top: 94px;
   position: relative;
   z-index: 2;
-  overflow: hidden;
 }
 
 .game__head-star {

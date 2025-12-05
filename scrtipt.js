@@ -57,12 +57,13 @@ switch (operator) {
     alert(`Неправильно. Правильный ответ: ${result}`);
   }}
 
-function Game3(){
-  let splitWord = String((prompt("Пожалуйста,введите ваш текст")).split);
-  let reverseWord = splitWord.reverse();
-  let joinWord = reverseWord.join("");
-  return joinWord;
-}
+   function Game3(){
+   let splitWord = prompt("Пожалуйста,введите ваш текст").split('');
+   let reverseWord = splitWord.reverse();
+   let joinWord = reverseWord.join('');
+    console.log(joinWord);    
+    return joinWord;
+   }
 
 function Game5() {
     
@@ -135,7 +136,7 @@ let num3 =  32.58884;
 
 
 
- let num5 = Math.random() * 10;
+ let num5 = (Math.random() * 10) + 1;
 console.log(Math.floor(num5));
 
 
@@ -143,7 +144,7 @@ console.log(Math.floor(num5));
 function randomNumFucn (num6){
    const arr = [];
    for(let i = 0; i < num6; i++){
-       arr.push(Math.floor(Math.random()*num6));
+       arr.push((Math.floor(Math.random()*num6)) / 2);
    }
 return arr;
 }
@@ -170,8 +171,8 @@ console.log(currentDate);
 
 function formDate(date) {
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь",
-      "Октябрь", "Ноябрь", "Декабрь"];
+const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября",
+      "Октября", "Ноября", "Декабря"];
 const year = date.getFullYear();
 const day = date.getDate();
 const month = date.getMonth();
