@@ -61,12 +61,12 @@ switch (operator) {
    let splitWord = prompt("Пожалуйста,введите ваш текст").split('');
    let reverseWord = splitWord.reverse();
    let joinWord = reverseWord.join('');
-    console.log(joinWord);    
+    alert(joinWord);    
     return joinWord;
    }
 
-function Game5() {
-    
+  function Game5() {
+      
     const quiz = [
         {
             question: "Какой цвет небо?",
