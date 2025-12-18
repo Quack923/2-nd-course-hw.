@@ -106,85 +106,119 @@ switch (operator) {
 }
 
 
+function Game4(){
 
+ let userChoice = prompt("Введите ваш выбор: камень, ножницы или бумага").toLowerCase();
 
-let str ='js';
-str = str.toUpperCase();
-console.log(str);
-
-
-function filter (arr, str) {
-   const lowerStr = str.toLowerCase();
-   return arr.filter(item => item.toLowerCase().startsWith(lowerStr));
-
-}
-
-console.log(filter(['Молокозавод', 'Молочка','МИЛк'], 'Молоко'));
-
-
-
-let num3 =  32.58884;
- console.log(Math.floor(num3));
- console.log(Math.ceil(num3));
- console.log(Math.round(num3));
-
-
+ const options = ["камень", "ножницы", "бумага"];
 
  
- console.log(Math.min(52, 53, 49, 77, 21, 32));
- console.log(Math.max(52, 53, 49, 77, 21, 32));
+const randomIndex = Math.floor(Math.random() * options.length);
+const botChoice = options[randomIndex];
+
+let result = "";
 
 
-
- let num5 = (Math.random() * 10) + 1;
-console.log(Math.floor(num5));
-
-
-
-function randomNumFucn (num6){
-   const arr = [];
-   for(let i = 0; i < num6; i++){
-       arr.push((Math.floor(Math.random()*num6)) / 2);
-   }
-return arr;
-}
-
-console.log(randomNumFucn(10));
-
-
-function doubleRandom(num7,num72){
-   return Math.floor(Math.random() * (num72 - num7 + 1)) + num7;
-}
-
-console.log(doubleRandom(12,25));
-
-
-
-let currentDate = new Date();
-console.log(currentDate);  
-
-
-currentDate.setDate(currentDate.getDate() + 73);
-console.log(currentDate);
-
-
-
-function formDate(date) {
-const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября",
-      "Октября", "Ноября", "Декабря"];
-const year = date.getFullYear();
-const day = date.getDate();
-const month = date.getMonth();
-const dayOfWeek = days[date.getDay()];
-const hours = date.getHours();
-const minutes = date.getMinutes();
-const seconds = date.getSeconds();
+if (userChoice === botChoice) { result ="У вас ничья!";
   
-   return `
-    Дата: ${day} ${months[month]} ${year} - это ${dayOfWeek}.
-    Время: ${hours}:${minutes}:${seconds};
-  `; 
+} else if (
+        (userChoice === "камень" && botChoice === "ножницы") ||
+        (userChoice === "ножницы" && botChoice === "бумага") ||
+        (userChoice === "бумага" && botChoice === "камень")
+)
+  {
+        result = "Вы выиграли, поздравляем!";
+    } else {
+        result = "К сожалению, вы проиграли!";
+    }
+
+  alert(`Ваш выбор: ${userChoice}\nВыбор компьютера: ${botChoice}\n\nРезультат: ${result}`);
+
 }
 
- console.log(formDate(new Date()));
+
+
+const people = [
+   { name: 'Глеб', age: 29 },
+   { name: 'Анна', age: 17 },
+   { name: 'Олег', age: 7 },
+   { name: 'Оксана', age: 47 }
+];
+
+console.log(people.sort((a, b) => a.age - b.age));
+
+
+function filter(array, ruleFunction) {
+  const result = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (ruleFunction(array[i])) {
+      result.push(array[i]);
+    }
+  }
+
+  return result;
+}
+
+function isPositive(num) {
+  return num > 0;
+}
+
+function isMale(person) {
+  return person.gender == 'male';
+}
+
+console.log(filter([-5, -4, 1, 9], isPositive));
+
+const people2 = [
+   {name: 'Глеб', gender: 'male'},
+   {name: 'Анна', gender: 'female'},
+   {name: 'Олег', gender: 'male'},
+   {name: 'Оксана', gender: 'female'}
+];
+
+console.log(filter(people2, isMale));
+
+
+
+function curDateThirtysec(){
+
+  let count = 0;
+const intervalId = setInterval(() => {
+  console.log(new Date().toLocaleString()); 
+  count += 3;
+
+  if (count >= 30) {
+    clearInterval(intervalId);
+    console.log("Время истекло");
+  }
+}, 3000);
+};
+
+console.log (curDateThirtysec());
+
+
+
+function delayForSecond(callback) {
+  setTimeout(callback, 1000);
+}
+
+delayForSecond(function () {
+   console.log('Привет, Глеб!');
+})
+
+
+
+
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if(cb) {  cb(); }
+    }, 1000)
+}
+
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
+}
+
+delayForSecond(() => sayHi('Глеб'))
