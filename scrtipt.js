@@ -137,88 +137,13 @@ if (userChoice === botChoice) { result ="У вас ничья!";
 }
 
 
-
-const people = [
-   { name: 'Глеб', age: 29 },
-   { name: 'Анна', age: 17 },
-   { name: 'Олег', age: 7 },
-   { name: 'Оксана', age: 47 }
-];
-
-console.log(people.sort((a, b) => a.age - b.age));
-
-
-function filter(array, ruleFunction) {
-  const result = [];
-
-  for (let i = 0; i < array.length; i++) {
-    if (ruleFunction(array[i])) {
-      result.push(array[i]);
-    }
-  }
-
-  return result;
+ const btn = document.querySelector('.GAME6')
+function getRandomColor() {
+    const hex = Math.floor(Math.random() * 16777215).toString(16);
+    return '#' + hex.padStart(6, '0');
 }
+btn.addEventListener('click', () => {
+    const newColor = getRandomColor();
+    document.body.style.backgroundColor = newColor;
+});
 
-function isPositive(num) {
-  return num > 0;
-}
-
-function isMale(person) {
-  return person.gender == 'male';
-}
-
-console.log(filter([-5, -4, 1, 9], isPositive));
-
-const people2 = [
-   {name: 'Глеб', gender: 'male'},
-   {name: 'Анна', gender: 'female'},
-   {name: 'Олег', gender: 'male'},
-   {name: 'Оксана', gender: 'female'}
-];
-
-console.log(filter(people2, isMale));
-
-
-
-function curDateThirtysec(){
-
-  let count = 0;
-const intervalId = setInterval(() => {
-  console.log(new Date().toLocaleString()); 
-  count += 3;
-
-  if (count >= 30) {
-    clearInterval(intervalId);
-    console.log("Время истекло");
-  }
-}, 3000);
-};
-
-console.log (curDateThirtysec());
-
-
-
-function delayForSecond(callback) {
-  setTimeout(callback, 1000);
-}
-
-delayForSecond(function () {
-   console.log('Привет, Глеб!');
-})
-
-
-
-
-function delayForSecond(cb) {
-    setTimeout(() => {
-        console.log('Прошла одна секунда');
-        if(cb) {  cb(); }
-    }, 1000)
-}
-
-function sayHi (name) {
-    console.log(`Привет, ${name}!`);
-}
-
-delayForSecond(() => sayHi('Глеб'))

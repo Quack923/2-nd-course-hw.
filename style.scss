@@ -101,7 +101,23 @@ background-color: white;
     gap: 51px;
     padding-left: 49px;
         margin-top: 161px;
+    
   }
+
+.header-floor-scrol{
+  display: flex;
+  gap: 51px ;
+  animation: scroll-left 12s linear infinite;}
+  
+ @keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
 
   .header-floor__atb-text{
 color: rgba(32, 32, 39, 1);

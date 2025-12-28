@@ -103,6 +103,20 @@ body {
   margin-top: 161px;
 }
 
+.header-floor-scrol {
+  display: flex;
+  gap: 51px;
+  animation: scroll-left 12s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .header-floor__atb-text {
   color: rgb(32, 32, 39);
   font-size: 30px;
