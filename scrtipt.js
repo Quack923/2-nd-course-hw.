@@ -146,4 +146,3 @@ btn.addEventListener('click', () => {
     const newColor = getRandomColor();
     document.body.style.backgroundColor = newColor;
 });
-
