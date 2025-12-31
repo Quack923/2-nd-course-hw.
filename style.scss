@@ -33,6 +33,7 @@ a {
 
 body {
   font-family: "Montserrat", sans-serif;
+  
 }
 
 .top {
@@ -401,6 +402,7 @@ margin-top: 12px;
   color: rgba(255, 255, 255, 1);
   font-size: 24px;
   font-weight: 600;
+  scroll-behavior: smooth;
 }
 
 .content__game-btn:hover{transition: 1s;

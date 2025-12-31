@@ -410,6 +410,7 @@ body {
   color: rgb(255, 255, 255);
   font-size: 24px;
   font-weight: 600;
+  scroll-behavior: smooth;
 }
 
 .content__game-btn:hover {
@@ -552,6 +553,7 @@ body {
     margin-top: 0px;
     gap: 27px;
     padding-left: 24px;
+    padding-top: 15px;
   }
   .header-floor__atb-text {
     font-size: 16px;
@@ -742,6 +744,9 @@ body {
   }
   .header-floor {
     margin-top: 195px;
+  }
+  .header-floor__atb {
+    padding-top: 15px;
   }
   .game-content {
     align-items: center;

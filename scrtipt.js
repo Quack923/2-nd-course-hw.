@@ -137,12 +137,13 @@ if (userChoice === botChoice) { result ="У вас ничья!";
 }
 
 
- const btn = document.querySelector('.GAME6')
+ const btn = document.querySelector('.GAME6');
+ const contentBac = document.querySelector('.content')
 function getRandomColor() {
     const hex = Math.floor(Math.random() * 16777215).toString(16);
     return '#' + hex.padStart(6, '0');
 }
 btn.addEventListener('click', () => {
     const newColor = getRandomColor();
-    document.body.style.backgroundColor = newColor;
+    contentBac.style.backgroundColor = newColor;
 });
