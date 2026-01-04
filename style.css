@@ -124,11 +124,6 @@ body {
   white-space: nowrap;
 }
 
-.header-floor__star {
-  width: 36px;
-  height: 36px;
-}
-
 .game__head-title {
   font-size: 64px;
   font-weight: 700;
@@ -558,12 +553,14 @@ body {
   .header-floor__atb-text {
     font-size: 16px;
   }
-  .header-floor__star {
-    padding-top: 16px;
-  }
   .header-floor__star-img {
     width: 19.34px;
     height: 19.34px;
+  }
+  .header-floor-scrol {
+    display: flex;
+    gap: 51px;
+    animation: scroll-left 12s linear infinite;
   }
   .game {
     display: none;

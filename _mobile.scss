@@ -123,13 +123,17 @@
     font-size: 16px;
   }
 
-  &__star{padding-top: 16px ;}
+ 
 
   &__star-img{
     width: 19.34px;
     height: 19.34px;}
   }
   
+  .header-floor-scrol{
+  display: flex;
+  gap: 51px ;
+  animation: scroll-left 12s linear infinite;}
 
  
 
