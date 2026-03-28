@@ -1,0 +1,207 @@
+@media(min-width: 300px) and (max-width: 700px) {
+
+.center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 700px;
+    background-image: url(img-hw/mobile-backtop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    
+  }
+
+  .header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: 121px;
+}
+
+    .header__vector{display: block;}
+    .header__verctor-floorstar1{
+        background-image:url(img-hw/mobile-top-vector1.svg) ;
+        background-size:cover ;
+        background-repeat: no-repeat;
+        width: 233px;
+        height: 238.57px;
+        transform: rotate(.68deg);
+        position: absolute;
+        z-index: 2;
+        right: -70px;
+        top: -95px;
+    }
+
+    .header__verctor-floorstar2{
+         background-image:url(img-hw/mobile-top-vector2.svg) ;
+        background-size:cover ;
+        background-repeat: no-repeat;
+        width: 35px;
+        height: 35px;
+         position: absolute;
+        z-index: 2;
+        left: 37px;
+        top: 97px;
+
+    }
+
+    .header__verctor-floorstar3{
+         background-image:url(img-hw/mobile-top-vector3.svg) ;
+        background-size:cover ;
+        background-repeat: no-repeat;
+        width: 21px;
+        height: 21px;
+         position: absolute;
+        z-index: 2;
+        left: 91px;
+        top: 64px;
+
+    }
+
+     .header__verctor-floorstar4{
+         background-image:url(img-hw/mobile-top-vector4.svg) ;
+        background-size:cover ;
+        background-repeat: no-repeat;
+        width: 39px;
+        height: 41px;
+         position: absolute;
+        z-index: 2;
+        right: 34px;
+        top: 580px;
+
+    }
+
+     .header__verctor-floorstar5{
+         background-image:url(img-hw/mobile-top-vector5.svg) ;
+        background-size:cover ;
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 18px;
+         position: absolute;
+        z-index: 2;
+        right: 86px;
+        top: 557px;
+
+    }
+    
+  .header-text {
+    font-size: 40px;
+    width: 262px;
+    text-align: center;
+  }
+  .header-little {
+    font-size: 16px;
+  }
+  .top-content {
+    max-width: 296px;
+    padding-top: 147px;
+  }
+
+  .header-btn{
+    width: 285px;
+    height: 55px;
+
+    &__function{
+    font-size: 16px;
+    font-weight: 600;}
+}
+
+  .header-floor {
+    height: 51.34px;
+    margin-top: 0px;
+    gap: 27px;
+    padding-left: 24px;
+  
+  &__atb-text {
+    font-size: 16px;
+  }
+
+  &__star{padding-top: 16px ;}
+
+  &__star-img{
+    width: 19.34px;
+    height: 19.34px;}
+  }
+  
+
+ 
+
+
+.game{display: none;}
+
+
+.content{height: 3740px;
+padding-bottom: 38px;}
+.content-head{font-size: 40px;
+padding-bottom: 48px;
+padding-top: 48px; ;}
+
+.content-base{gap: 24;}
+
+.content__game{
+width: 343px; 
+display: flex;
+flex-direction: column-reverse;
+}
+
+.content__game2{
+width: 343px;
+display: flex;
+flex-direction: column-reverse;
+}
+.content__number1{height: 528.63px;}
+.content__number2{height: 567.63px;}
+.content__number3{height: 567.63px;}
+.content__number4{height: 606.63px;}
+.content__number5{height: 567.63px;}
+.content__number6{height: 626.63px;}
+
+
+.content__game-atb{
+    padding-top: 33px;
+    padding-bottom: 32px;
+    gap: 16px;
+    align-items: center;
+    margin: 0;
+    }
+
+.content__game-img{
+width: 343px;
+height: 284.93px;
+padding-left: 0;
+}
+.content__game-img2{
+width: 343px;
+height: 284.93px;
+padding-left: 0;}
+
+.content__game-name{font-size: 32px;width: 284.93px;}
+.content__game-description{
+font-size: 16px;
+width: 285px;}
+.content__game-btn{
+margin-top: 16px;
+width: 285px;
+height: 55px;}
+.content__game-function{
+font-size: 16px;
+font-weight: 600;}
+
+
+.content-star{display: none;}
+.content-star2{display: none;}
+.content-star3{display: none;}
+.content-star4{display: none;}
+
+
+
+
+
+
+
+
+}
