@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
 
 .head {
   height: 76px;
@@ -51,10 +55,10 @@ body {
 }
 
 .header-little{
-    font-size: 24px;
-    font-weight: 700px;
+   font-size: 24px;
+    font-weight: 400;
     padding-top: 24px;
-    padding-bottom: 64px;
+    padding-bottom:48px;
 }
 
 
@@ -67,7 +71,14 @@ body {
     border: 1px solid rgba(32, 32, 39, 1);
     border-radius: 60px;
 }
-.header-btn__function{color: white;}
+.header-btn__function{
+  color: white;
+  display: flex;
+  padding-top: 16px;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+}
 .header-btn__function:hover{color: black;}
 
 .header-btn:hover{ 
@@ -76,18 +87,94 @@ color: black;
 background-color: white;
 }
 
+.header-floor{   
+   overflow: hidden;
+   height: 90px;
+   box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(50px);
+  background: rgba(188, 236, 48, 1);
+    display: flex;
+    align-items: center;
+    gap: 51px;
+    padding-left: 49px;
+        margin-top: 161px;
+  }
+
+  .header-floor__atb-text{
+color: rgba(32, 32, 39, 1);
+font-size: 30px;
+font-weight: 700;
+white-space: nowrap;}
+
+.header-floor__star{
+  width: 36px;
+  height: 36px;
+}
+
+.game__head-title{
+font-size: 64px;
+font-weight: 700;
+color: rgba(255, 255, 255, 1);
+padding-bottom: 24px;  
+}
+
+.game__head-for{
+font-size: 24px;
+font-weight: 400;
+color: rgba(255, 255, 255, 1);
+padding-bottom: 72px;}
 
 .game{
   background-color: rgba(32, 32, 39, 1);
-  height: 1242px;
-  padding-top: 96px;}
+  padding-top: 94px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.game__head-star{
+  width: 584.72px;
+height: 584.72px;
+background-image: url(img-hw/Star\ 1.svg);
+background-repeat: no-repeat ;
+position: absolute;
+z-index: 2;
+transform: rotate(-6.77deg);
+right: 135px;
+top: 50px;
+}
 
+.game__head-star11{
+  background-image: url(img-hw/Star\ 11.svg);
+background-repeat: no-repeat ;
+position: absolute;
+z-index: 2;
+width: 31.34px;
+height: 31.34px;
+transform: rotate(5.45deg);
+top: 770px;
+left: 199px;
+}
+
+.game__head-star12{
+   background-image: url(img-hw/Star\ 12.svg);
+background-repeat: no-repeat ;
+position: absolute;
+z-index: 2;
+width: 54.6px;
+height: 54.6px;
+transform: rotate(5.45deg);
+top: 822px;
+left: 230px;
+}
 
 .game-content{ 
   display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 32px;
+    column-gap: 32px;
+    position: relative;
+    z-index: 2;
 }
 
 .game__type{ width: 378px;
@@ -104,52 +191,68 @@ height: 473px;
 height: 512px;
 }
 
+
 .game__type-big{
   height: 551px;
 }
 
-.game__type1{ 
-background-image:url(img-hw/game1.jpg);
+.game__type-img{border-radius: 30px;
+width: 378px;
+height: 314px;}
+
+.game__type1{ border-radius: 30px;
+
+}
+.game__type1:hover{  transform: scale(1.1);}
+
+.game__type{
 background-repeat: no-repeat;
 }
-.game__type2{
-background-image:url(img-hw/game2.jpg);
-background-repeat: no-repeat;}
-.game__type3{
-  background-image:url(img-hw/game3.jpg);
-  background-repeat: no-repeat;
+
+.game__type2:hover{  transform: scale(1.1);
+  margin-bottom: 10px;
+
 }
-.game__type4{
-background-image:url(img-hw/game4.jpg);
-background-repeat: no-repeat;}
-.game__type5{
-background-image:url(img-hw/game5.jpg);
-background-repeat: no-repeat;}
-.game__type6{
-background-image:url(img-hw/game6.jpg);
-background-repeat: no-repeat;}
+
+
+.game__type3:hover{  transform: scale(1.1);}
+
+
+
+.game__type4:hover{  transform: scale(1.1);}
+
+.game__type5{    margin-top: 32px;
+}
+.game__type5:hover{  transform: scale(1.1);}
+
+
+
+.game__type6:hover{  transform: scale(1.1);}
 
 .game__type-content{
-margin-top: 340px;
 width: 108px;
+ margin-top: 40px;  
 height: 36px;
 border-radius: 52.58px;
 background: rgba(247, 247, 247, 1);
 margin-left: 32px;
-
-
 }
+.game__type-img{ border-radius: 30px;}
+
+
+
 
 .game-number{ 
   color: black;
  font-size: 16px;
 font-weight: 500;
 padding: 8px 16px 10px 16px;
-margin-bottom: 16px;
+
 }
 
 .game-name{color: rgba(32, 32, 39, 1);
 font-size: 32px;
 font-weight: 700;
 padding-left: 32px;
+margin-top: 16px;
 }
